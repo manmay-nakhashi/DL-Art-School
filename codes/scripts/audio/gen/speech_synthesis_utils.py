@@ -14,7 +14,7 @@ from utils.util import load_model_from_config
 
 
 def load_speech_dvae():
-    dvae = load_model_from_config("../experiments/train_diffusion_vocoder_22k_level.yml",
+    dvae = load_model_from_config("../recipes/tortoise-tts/train_diffusion_vocoder_22k_level.yml",
                                   "dvae").cpu()
     dvae.eval()
     return dvae
@@ -40,7 +40,7 @@ def load_clvp():
     return clvp
 
 
-def wav_to_mel(wav, mel_norms_file='../experiments/clips_mel_norms.pth'):
+def wav_to_mel(wav, mel_norms_file='../recipes/tortoise-tts/clips_mel_norms.pth'):
     """
     Converts an audio clip into a MEL tensor that the vocoder, DVAE and GptTts models use whenever a MEL is called for.
     """

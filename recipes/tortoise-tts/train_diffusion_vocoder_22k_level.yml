@@ -1,5 +1,5 @@
 path:
-  pretrain_model_dvae: '/content/gdrive/MyDrive/Colab_Notebooks/dvae.pth'
+  pretrain_model_dvae: '/home/manmay/Downloads/dvae.pth'
   strict_load: true
 networks:
   dvae:
