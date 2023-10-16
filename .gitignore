@@ -14,12 +14,10 @@ data/*
 *.png
 *.jpg
 *.gif
-*.pth
 *.pytorch
 *.zip
 *.cu
 *.pt
-*.pth
 *.pdf
 *.tsv
 
