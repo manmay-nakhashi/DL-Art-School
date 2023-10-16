@@ -1,0 +1,17 @@
+path:
+  pretrain_model_dvae: '/content/gdrive/MyDrive/Colab_Notebooks/dvae.pth'
+  strict_load: true
+networks:
+  dvae:
+    type: generator
+    which_model_G: lucidrains_dvae
+    kwargs:
+      channels: 80
+      codebook_dim: 512
+      hidden_dim: 512
+      kernel_size: 3
+      num_layers: 2
+      num_resnet_blocks: 3
+      num_tokens: 8192
+      positional_dims: 1
+      use_transposed_convs: false
